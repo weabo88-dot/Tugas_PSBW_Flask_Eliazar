@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP (Adapted for Flask)
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portofolio - Eliazar Yasta Prarindra</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+
+				<div id="header">
+
+						<div class="inner">
+							<header>
+								<h1><a href="{{ url_for('home') }}" id="logo">Eliazar Yasta</a></h1>
+								<hr />
+								<p>Mahasiswa Sistem & Teknologi Informasi | UNTAG Surabaya</p>
+							</header>
+							<footer>
+								<a href="#banner" class="button circled scrolly">Kenali Saya</a>
+							</footer>
+						</div>
+
+						<nav id="nav">
+							<ul>
+								<li><a href="{{ url_for('home') }}">Home</a></li>
+								<li><a href="#banner">Biodata</a></li>
+								<li><a href="#features">Hobi & Aktivitas</a></li>
+								<li><a href="#footer">Kontak</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<section id="banner">
+					<header>
+						<h2>Halo, saya <strong>Eliazar Yasta Prarindra</strong>.</h2>
+						<p>
+							NBI: <strong>1482500005</strong> | Program Studi <strong>Sistem dan Teknologi Informasi</strong><br>
+							Universitas 17 Agustus 1945 (UNTAG) Surabaya.
+						</p>
+					</header>
+				</section>
+
+				<section class="carousel">
+					<div class="reel">
+
+						<article>
+							<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic01.jpg') }}" alt="" /></a>
+							<header>
+								<h3><a href="#">Jogging Rutin</a></h3>
+							</header>
+							<p>Menjaga kebugaran fisik dan stamina tubuh secara konsisten setiap hari.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic02.jpg') }}" alt="" /></a>
+							<header>
+								<h3><a href="#">Calisthenics</a></h3>
+							</header>
+							<p>Latihan beban tubuh untuk kekuatan otot dan kesehatan jasmani.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic03.jpg') }}" alt="" /></a>
+							<header>
+								<h3><a href="#">Film & Anime</a></h3>
+							</header>
+							<p>Menikmati berbagai judul film dan serial anime di waktu luang.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic04.jpg') }}" alt="" /></a>
+							<header>
+								<h3><a href="#">Series Science fiction</a></h3>
+							</header>
+							<p>Mengikuti serial televisi fiksi ilmiah dan pahlawan super favorit.</p>
+						</article>
+
+						<article>
+							<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic05.jpg') }}" alt="" /></a>
+							<header>
+								<h3><a href="#action">Play a games</a></h3>
+							</header>
+							<p>Menyukai game dengan story campaign</p>
+						</article>
+
+					</div>
+				</section>
+
+				<div class="wrapper style2">
+
+					<article id="main" class="container special">
+						<header>
+							<h2><a href="#">Profil Akademik & Komitmen</a></h2>
+							<p>
+								Berfokus pada pengembangan sistem informasi, pemodelan proses, dan rekayasa web berbasis praktik terbaik.
+							</p>
+						</header>
+						<p>
+							Sebagai mahasiswa Sistem dan Teknologi Informasi di UNTAG Surabaya, saya aktif mengeksplorasi dunia rekayasa perangkat lunak, pemrograman web menggunakan Python Flask, pengelolaan database MySQL, serta manajemen versi kode dengan Git dan GitHub. Pendekatan analitis dan terstruktur selalu saya terapkan dalam setiap penyelesaian tugas akademik maupun proyek pengembangan sistem.
+						</p>
+						<footer>
+							<a href="#features" class="button scrolly">Lihat Hobi Saya</a>
+						</footer>
+					</article>
+
+				</div>
+
+			<!-- Features / Hobi & Minat Detail -->
+				<div class="wrapper style1">
+
+					<section id="features" class="container special">
+						<header>
+							<h2>Hobi & Aktivitas Harian</h2>
+							<p>Keseimbangan antara produktivitas akademik dan kebugaran gaya hidup sehat.</p>
+						</header>
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic07.jpg') }}" alt="" /></a>
+								<header>
+									<h3><a href="#">Kebugaran Fisik</a></h3>
+								</header>
+								<p>
+									Rutinitas olahraga harian seperti jogging dan calisthenics untuk menjaga energi positif dan kesehatan jangka panjang.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic08.jpg') }}" alt="" /></a>
+								<header>
+									<h3><a href="#">Hiburan & Sinema</a></h3>
+								</header>
+								<p>
+									Menyaksikan film, anime, dan serial.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<a href="#" class="image featured"><img src="{{ url_for('static', filename='images/pic09.jpg') }}" alt="" /></a>
+								<header>
+									<h3><a href="#">Eksplorasi Game</a></h3>
+								</header>
+								<p>
+									Menikmati alur cerita mendalam dalam game console
+								</p>
+							</article>
+						</div>
+					</section>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact" id="kontak">
+										<header>
+											<h3>Hubungi & Terhubung Dengan Saya</h3>
+										</header>
+										<p>Domisili di Surabaya, Jawa Timur.</p>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+											<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; 2026 Eliazar Yasta Prarindra. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts (Menggunakan url_for Flask untuk aset JS) -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.dropotron.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
